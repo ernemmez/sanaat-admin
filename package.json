@@ -15,6 +15,7 @@
     "@strapi/plugin-i18n": "4.20.4",
     "@strapi/plugin-seo": "^1.9.8",
     "@strapi/plugin-users-permissions": "4.20.4",
+    "@strapi/provider-upload-cloudinary": "^4.25.1",
     "@strapi/strapi": "4.20.4",
     "better-sqlite3": "8.6.0",
     "pg": "^8.12.0",
@@ -26,7 +27,7 @@
   },
   "author": {
     "name": "Eren Emmez",
-    "email": "emmezeren@gmail.com"  
+    "email": "emmezeren@gmail.com"
   },
   "strapi": {
     "uuid": "0f95dc7c-202b-4ab2-a874-3799d23b1640"

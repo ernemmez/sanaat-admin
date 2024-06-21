@@ -1,0 +1,23 @@
+{
+    "collectionName": "components_sections_blog-list",
+    "info": {
+      "displayName": "Blog List",
+      "icon": "eye",
+      "description": ""
+    },
+    "options": {},
+    "attributes": {
+      "title": {
+        "type": "string"
+      },
+      "desc": {
+        "type": "string"
+      },
+      "blogs": {
+        "type": "relation",
+        "relation": "oneToMany",
+        "target": "api::topic.topic"
+      }
+    }
+  }
+  

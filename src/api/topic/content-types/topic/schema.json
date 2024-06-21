@@ -1,0 +1,297 @@
+{
+  "kind": "collectionType",
+  "collectionName": "topics",
+  "info": {
+    "singularName": "topic",
+    "pluralName": "topics",
+    "displayName": "Topic",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "CoverImage": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "sections.topic-image"
+    },
+    "QuickTable": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "meta.quick-table"
+    },
+    "TopicKeywords": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text",
+      "required": false
+    },
+    "slug": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true,
+      "regex": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "unique": true
+    },
+    "shortDesc": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text",
+      "required": true
+    },
+    "content": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "blocks",
+      "required": true
+    },
+    "isBlogText": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "isCollectionItem": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "boolean",
+      "default": false
+    },
+    "recomended_topics": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::topic.topic",
+      "mappedBy": "topics"
+    },
+    "topics": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::topic.topic",
+      "inversedBy": "recomended_topics"
+    },
+    "encyclopedia": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::encyclopedia.encyclopedia",
+      "inversedBy": "topics"
+    },
+    "author": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::author.author"
+    },
+    "keywords": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "customField",
+      "options": [
+        "Sanat",
+        "Tarih",
+        "Kültür",
+        "Gezi",
+        "Arkeoloji",
+        "Modern sanat",
+        "Mimari",
+        "Sanat tarihi",
+        "Resim",
+        "Heykel",
+        "Sanat eseri",
+        "Sergi",
+        "Müze",
+        "Galeri",
+        "Geleneksel sanat",
+        "Çağdaş sanat",
+        "Antik sanat",
+        "Etnografya",
+        "Kültürel miras",
+        "Tarih öncesi",
+        "Arkeolojik kazı",
+        "Arkeolojik buluntular",
+        "Tarihi eser",
+        "Tarihi mekan",
+        "Kültürel gezi",
+        "Tarihi tur",
+        "Şehir turu",
+        "Kültür turizmi",
+        "Anıt",
+        "Anıtsal yapı",
+        "Sanat tarihi müzesi",
+        "Tarihi binalar",
+        "Mimari tasarım",
+        "Modern mimari",
+        "Klasik mimari",
+        "Ortaçağ mimarisi",
+        "Rönesans dönemi",
+        "Barok sanat",
+        "Gotik sanat",
+        "İslam sanatı",
+        "Uzak Doğu sanatı",
+        "Latin Amerika sanatı",
+        "Yerel sanat",
+        "Halk sanatı",
+        "El sanatları",
+        "Sanat festivali",
+        "Bienal",
+        "Performans sanatı",
+        "Video sanatı",
+        "Dijital sanat",
+        "Fotoğrafçılık",
+        "Sanat eleştirisi",
+        "Sanat kuramı",
+        "Sanat hareketleri",
+        "Postmodern sanat",
+        "Avangard sanat",
+        "Minimalist sanat",
+        "Soyut sanat",
+        "Realist sanat",
+        "Empresyonizm",
+        "Ekspresyonizm",
+        "Sürrealizm",
+        "Dadaizm",
+        "Fütürizm",
+        "Pop art",
+        "Sanat eğitimi",
+        "Sanat tarihi dersleri",
+        "Sanat atölyesi",
+        "Restorasyon",
+        "Konservasyon",
+        "Sanat müzesi",
+        "Tarih müzesi",
+        "Antik kent",
+        "Arkeolojik sit alanı",
+        "Mozaik sanat",
+        "Fresk",
+        "İkonografi",
+        "Numismatik",
+        "Epigrafi",
+        "Antropoloji",
+        "Paleontoloji",
+        "Tarihi belgeler",
+        "Arşiv çalışması",
+        "Paleografi",
+        "Sanatçı biyografileri",
+        "Sanat akımları",
+        "Kültürel etkinlikler",
+        "Dünya mirası",
+        "UNESCO miras listesi",
+        "Tarihi romanlar",
+        "Tarihi belgeseller",
+        "Sanat galerileri",
+        "Arkeoloji dergileri",
+        "Sanat dergileri",
+        "Kültür dergileri",
+        "Tarih kitapları",
+        "Kültürel yayınlar",
+        "Sanat fuarları",
+        "Sanat ödülleri",
+        "Tarihi şahsiyetler",
+        "Sanat müze gezisi",
+        "Kültürel sempozyumlar",
+        "Sanatçı röportajları",
+        "Kültürel belgeseller",
+        "Tarihi diziler",
+        "Sanat koleksiyonları",
+        "Kültürel miras koruma",
+        "Kültür sanat etkinlikleri",
+        "Sanat blogları",
+        "Arkeolojik keşifler",
+        "Sanat tarihi konferansları",
+        "Müzik tarihi",
+        "Sanat eleştirmenleri",
+        "Kültürel analiz",
+        "Arkeolojik araştırmalar",
+        "Eski uygarlıklar",
+        "Sanat tarihi sergileri",
+        "Mimari incelemeler",
+        "Kültürel festivaller",
+        "Sanat ve tarih",
+        "Arkeolojik eserler",
+        "Sanat koleksiyonculuğu",
+        "Sanat terapisi",
+        "Kültürel miras koruma projeleri",
+        "Sanat hareketleri tarihi",
+        "Kültürel çalışmalar",
+        "Sanat galerisi incelemeleri",
+        "Arkeolojik raporlar",
+        "Tarihi olaylar",
+        "Sanat dersleri",
+        "Kültürel faaliyetler",
+        "Sanat ve toplum",
+        "Arkeolojik alanlar",
+        "Sanat galerisi turları",
+        "Kültürel miras yönetimi",
+        "Sanat sergisi incelemeleri",
+        "Arkeolojik kazı yöntemleri",
+        "Tarihi yapılar",
+        "Sanat eleştirisi blogları",
+        "Kültürel araştırmalar",
+        "Sanat ve kültür etkinlikleri",
+        "Arkeoloji ve tarih",
+        "Tarihi araştırmalar",
+        "Sanat müze incelemeleri",
+        "Kültürel proje yönetimi",
+        "Sanat galerisi sergileri",
+        "Arkeolojik eser koruma",
+        "Tarihi mekânlar",
+        "Sanat tarihi ve kültür",
+        "Kültürel miras çalışmaları",
+        "Sanat ve bilim",
+        "Arkeolojik kazı raporları",
+        "Tarihi dönemler",
+        "Sanat ve eğitim",
+        "Kültürel miras turları",
+        "Sanat arşivleri",
+        "Arkeolojik alan keşifleri"
+      ],
+      "customField": "plugin::multi-select.multi-select"
+    }
+  }
+}

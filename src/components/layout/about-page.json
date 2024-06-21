@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_layout_about_pages",
+  "info": {
+    "displayName": "AboutPage",
+    "icon": "cup"
+  },
+  "options": {},
+  "attributes": {
+    "AboutPage": {
+      "type": "string"
+    }
+  }
+}

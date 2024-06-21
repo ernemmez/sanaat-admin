@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_meta_contents",
+  "info": {
+    "displayName": "content",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "value": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

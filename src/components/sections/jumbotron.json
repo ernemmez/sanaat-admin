@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_sections_jumbotrons",
+  "info": {
+    "displayName": "Jumbotron",
+    "icon": "cube",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "searchFormVisibilty": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "desc": {
+      "type": "text"
+    }
+  }
+}

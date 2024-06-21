@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_layout_contact_pages",
+  "info": {
+    "displayName": "ContactPage",
+    "icon": "file"
+  },
+  "options": {},
+  "attributes": {
+    "contact": {
+      "type": "boolean"
+    }
+  }
+}

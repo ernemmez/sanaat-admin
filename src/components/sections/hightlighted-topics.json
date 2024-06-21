@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_sections_hightlighted_topics",
+  "info": {
+    "displayName": "Hightlighted Topics",
+    "icon": "eye",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": false
+    },
+    "desc": {
+      "type": "string"
+    },
+    "showAllUrl": {
+      "type": "string",
+      "required": false
+    },
+    "topics": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::topic.topic"
+    },
+    "cardType": {
+      "type": "enumeration",
+      "enum": [
+        "BLOG",
+        "TOPIC"
+      ],
+      "required": true
+    },
+    "showAllButton": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "isBlog": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

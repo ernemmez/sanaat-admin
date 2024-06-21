@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_meta_keywords",
+  "info": {
+    "displayName": "Keywords",
+    "icon": "chartBubble"
+  },
+  "options": {},
+  "attributes": {
+    "topicKeywords": {
+      "type": "text",
+      "required": true,
+      "minLength": 31
+    }
+  }
+}

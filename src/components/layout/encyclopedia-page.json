@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_layout_encyclopedia_pages",
+  "info": {
+    "displayName": "Encyclopedia Page",
+    "icon": "dashboard"
+  },
+  "options": {},
+  "attributes": {
+    "isActive": {
+      "type": "boolean"
+    }
+  }
+}

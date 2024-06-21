@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_layout_topic_pages",
+  "info": {
+    "displayName": "Topic Page",
+    "icon": "dashboard"
+  },
+  "options": {},
+  "attributes": {
+    "isBlog": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

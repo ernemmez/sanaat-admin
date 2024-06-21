@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_meta_quick_tables",
+  "info": {
+    "displayName": "QuickTable",
+    "icon": "archive",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "content": {
+      "displayName": "content",
+      "type": "component",
+      "repeatable": true,
+      "component": "meta.content",
+      "required": true
+    }
+  }
+}

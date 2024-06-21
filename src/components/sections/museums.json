@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_sections_museums",
+  "info": {
+    "displayName": "Museum List",
+    "icon": "eye",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "string"
+    },
+    "museums": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::muze.muze"
+    }
+  }
+}

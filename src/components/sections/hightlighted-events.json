@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_sections_hightlighted_events",
+  "info": {
+    "displayName": "Hightlighted Events",
+    "icon": "calendar",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "events": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::event.event"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "desc": {
+      "type": "string"
+    },
+    "showAllUrl": {
+      "type": "string"
+    }
+  }
+}

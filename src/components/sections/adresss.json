@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_sections_adressses",
+  "info": {
+    "displayName": "Adresss",
+    "icon": "pinMap"
+  },
+  "options": {},
+  "attributes": {
+    "googleMapsUrl": {
+      "type": "string"
+    },
+    "addressText": {
+      "type": "string"
+    }
+  }
+}

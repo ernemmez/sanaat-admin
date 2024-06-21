@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_sanaat_landing_topic_images",
+  "info": {
+    "displayName": "Topic Image",
+    "icon": "picture",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "desc": {
+      "type": "string"
+    },
+    "coverImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

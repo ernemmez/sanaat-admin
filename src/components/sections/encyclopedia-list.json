@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_sections_encyclopedia-list",
+  "info": {
+    "displayName": "Encyclopedia List",
+    "icon": "eye",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "string"
+    },
+    "encyclopedias": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::encyclopedia.encyclopedia"
+    }
+  }
+}

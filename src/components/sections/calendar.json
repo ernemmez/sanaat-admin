@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_sections_calendars",
+  "info": {
+    "displayName": "Calendar",
+    "icon": "calendar"
+  },
+  "options": {},
+  "attributes": {
+    "takvim": {
+      "type": "string"
+    }
+  }
+}

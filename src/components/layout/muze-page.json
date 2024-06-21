@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_layout_muze_pages",
+  "info": {
+    "displayName": "Muze Page",
+    "icon": "dashboard"
+  },
+  "options": {},
+  "attributes": {
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}
